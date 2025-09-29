@@ -1,27 +1,26 @@
 /* Hero Section Styling */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400&display=swap');
+
 .hero {
-  background-image: url('https://source.unsplash.com/1600x900/?coffee');
+  background-image: url('aesthetic_coffee.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: #fefefe;
   text-align: center;
+  font-family: 'Raleway', sans-serif;
+  position: relative;
+  overflow: hidden;
 }
 
-.hero-content {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 2rem;
-  border-radius: 10px;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.hero p {
-  font-size: 1.5rem;
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(3px);
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
 }
