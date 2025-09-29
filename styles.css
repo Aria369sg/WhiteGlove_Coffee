@@ -88,3 +88,79 @@
   color: #6b4226;
   font-weight: 700;
 }
+
+/* Header Minimal Elegante */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background: #f8f5f2; /* claro elegante */
+  border-bottom: 2px solid #e0d4c3;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.header .logo {
+  font-size: 1.8rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  color: #3e2723; /* café oscuro */
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.header .logo:hover {
+  color: #a0522d; /* café más cálido */
+}
+
+.nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #4e342e;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 6px 10px;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+.nav a:hover {
+  background: #a0522d;
+  color: #fff;
+}
+
+/* Footer Minimal Elegante */
+.footer {
+  background: #f8f5f2;
+  border-top: 2px solid #e0d4c3;
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #4e342e;
+  font-size: 0.95rem;
+  margin-top: 4rem;
+}
+
+.footer p {
+  margin: 0.5rem 0;
+  opacity: 0.8;
+}
+
+.footer .socials {
+  margin-top: 1rem;
+}
+
+.footer .socials a {
+  margin: 0 12px;
+  color: #6f4e37;
+  font-size: 1.4rem;
+  transition: all 0.3s ease;
+}
+
+.footer .socials a:hover {
+  color: #a0522d;
+  transform: translateY(-3px);
+}
